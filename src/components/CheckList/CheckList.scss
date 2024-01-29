@@ -1,0 +1,36 @@
+
+
+.check-list{
+    list-style: none;
+}
+
+.fa-solid{
+    color:red;
+    margin: 5px;
+    cursor: pointer;
+}
+.t{
+    color: orange
+}
+.check-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.taskDone{
+    background-color: rgb(255, 249, 249);
+    display: inline-block;
+    padding: 10px;
+    
+}
+.editTask{
+    display: flex;
+}
+.task{
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked + .task-name {
+    /* Khi checkbox được chọn, thêm gạch ngang cho .task-name liền kề */
+    text-decoration: line-through;
+  }
